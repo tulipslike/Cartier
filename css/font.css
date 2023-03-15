@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Nanum;
+  src: url(fonts/NanumGothic-Regular.ttf)
+}
+@font-face {
+  font-family: NanumB;
+  src: url(fonts/NanumGothic-Bold.ttf)
+}
+@font-face {
+  font-family: Play;
+  src: url(fonts/Play-Regular.ttf)
+}
+@font-face {
+  font-family: PlayB;
+  src: url(fonts/Play-Bold.ttf)
+}
+
+body {font-family: Nanum, sans-serif}
+.en {font-family: Play}
+
+
+
+
+
+
+
+
+

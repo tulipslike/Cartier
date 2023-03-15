@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(all.min.css);
+@import url(font.css);
+
+#all-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../img/bg1.png) no-repeat left center / cover;
+  color: #222;
+  
+  min-width: 1200px;
+  min-height: 780px
+}
+
+h1 {
+  position: fixed;
+  left: 100px;
+  top: 150px;
+  z-index: 5
+}
+h1 img {width: 300px}
+
+.main-text {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  z-index: 1
+}
+.main-text h2 {
+  font-size: 50px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5)
+}
+.main-text em {
+  color: #f00;
+}
+.main-text .sns {
+  margin-top: 50px;
+}
+.main-text .sns a {
+  font-size: 50px;
+  opacity: 0.7
+}
+.main-text .sns a:hover {
+  opacity: 1
+}
+
+/*footer*/
+#footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(0,0,0,0.5);
+  color: #ddd;
+  font-size: small;
+}
+#footer .footer-inner {
+  width: 1200px;
+  height: 100%;
+  margin: auto
+}
+#footer .fnb {
+  float: left
+}
+#footer .fnb a {
+  display: block;
+  float: left;
+  padding: 0 20px
+}
+#footer .fnb a:hover {
+  background: rgba(0,0,0,0.3)
+}
+#footer .fnb a.on {
+  background: rgba(0,0,0,0.5)
+}
+
+#footer .copyright {
+  float: right
+}
+#footer .copyright em {
+  color: #f00;
+}
+
+/*동영상 콘텐츠*/
+#mov {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0
+}
+#mov article {
+  float: right;
+  width: 12%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+/*  구분선 배경*/
+  background: url(../img/divider.png) no-repeat  0 0 / contain;
+  cursor: url(../img/mouse1.png), auto
+}
+#mov article video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -2;
+  opacity: 0
+}
+#mov article h3 {
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  width: 100%;
+  border-left: 5px solid #555;
+  padding-left: 10px;
+  transition: all 0.3s;
+}
+#mov article h3:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0px;
+  background: rgba(0,0,0,0.7);
+  transition: all 0.3s
+}
+#mov article:hover h3 {
+  color: #fff;
+  border-left-color: #ddd
+}
+#mov article:hover h3:after {
+  height: 50px
+}
+
+#mov article h4 {
+  position: absolute;
+  right: 10px;
+  bottom: 320px;
+  width: 200px;
+  text-align: right;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #111
+}
+#mov article h4 + p {
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+  width: 200px;
+  height: 250px;
+
+  text-align: right;
+  color: #ccc;
+  line-height: 1.5;
+  font-size: small;
+}
+
+/*제이쿼리로 처리예정*/
+#mov article h4,
+#mov article h4 + p {
+  right: -200px
+}
+
+/*모달 콘텐츠*/
+#modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0,0,0,0.9);
+}
+#modal .close-btn {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  background: none;
+  color: #f00;
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.7
+}
+#modal .close-btn:hover {
+  opacity: 1
+}
+#modal .vid video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#modal {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
